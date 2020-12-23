@@ -1,3 +1,6 @@
+#Global AI Hub Python Course Homework - 1
+#Sümeyye Karatekin
+
 value1 = input("string bir deger giriniz :  ")
 print(f"Girilen deger : {value1}\t girilen degerin veri tipi : {type(value1)} ")
 
