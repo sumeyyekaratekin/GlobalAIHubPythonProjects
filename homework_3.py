@@ -39,7 +39,7 @@ while True:
 
     while hak > 0 or yeni_kelime != kelime:
         tahmin = input("Lütfen bir karakter giriniz : ")
-        if tahmin not in "abcdefghıijklmnopqrstuvwxyz" or tahmin in harftahmin or len(tahmin) != 1:
+        if tahmin not in "abcçdefghıijklmnoöpqrsştuüvwxyz" or tahmin in harftahmin or len(tahmin) != 1:
             print("Geçersiz tahmin yaptınız. Lütfen tekrar deneyiniz... ")
         elif tahmin in kelime:
             for i, j in enumerate(kelime):  #enumerate()yöntem bir yinelenebilir sayacı ekler ve onu döndürür.
