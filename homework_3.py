@@ -5,10 +5,10 @@ import random
 print("İsim Giriniz : ")
 isim = str(input(""))
 print("Merhaba, " + isim.capitalize() + ", Kelime Tahmin Oyununa Hoşgeldiniz..")
-kelime_hayvan = ("kedi", "köpek", "tavşan", "ördek", "zürafa", "tavuk", "kaplumbaga", "leylek","kelebek","örümcek")
-kelime_meyve = ("elma","armut","portakal","şeftali","avokado","karpuz","kayısı","kiraz","mandalina")
-kelime_sebze = ("pırasa","domates","ıspanak","kabak","havuç","patates","patlıcan","fasülye","maydonoz","brokoli")
-kelime_cicek = ("menekşe","papatya","karanfil","zambak","sümbül","leylak","begonvil","begonya","orkide")
+kelime_hayvan = ("Kedi", "köpek")
+kelime_meyve = ("elma","armut","portakal","seftali","avokado","karpuz","kayisi","kiraz","mandalina")
+kelime_sebze = ("pirasa","domates","ispanak","kabak","havuc","patates","patlican","fasulye","maydonoz","brokoli")
+kelime_cicek = ("menekse","papatya","karanfil","zambak","sumbul","leylak","begonvil","begonya","orkide")
 
 print("Hangi kelimeyi tahmin etmek istiyorsunuz: Hayvan(1),Meyve2), Sebze(3), Çiçek(4)")
 secim = int(input("Bir deger giriniz : "))
@@ -30,16 +30,16 @@ while True:
     else:
         print("\nHata!!! uygun seçim yapmadınız.")
         break
+
+
     hak = 5
     yeni_kelime = (list("_" * len(kelime)))
     harftahmin = []
     print("Toplam " + str(hak) + " hakkınız var")
-    kac_harf = str(len(kelime))
-    print("* * * Kelimemiz: " + kac_harf + " Karakter uzunluğundadır. * * *")
 
     while hak > 0 or yeni_kelime != kelime:
         tahmin = input("Lütfen bir karakter giriniz : ")
-        if tahmin not in "abcçdefghıijklmnoöpqrsştuüvwxyz" or tahmin in harftahmin or len(tahmin) != 1:
+        if tahmin not in "abcçdefgğhıijklmnoöpqrsştuüvwxyz" or tahmin in harftahmin or len(tahmin) != 1:
             print("Geçersiz tahmin yaptınız. Lütfen tekrar deneyiniz... ")
         elif tahmin in kelime:
             for i, j in enumerate(kelime):  #enumerate()yöntem bir yinelenebilir sayacı ekler ve onu döndürür.
@@ -61,3 +61,4 @@ while True:
             print("Kazandınız!")
             break
     break
+
