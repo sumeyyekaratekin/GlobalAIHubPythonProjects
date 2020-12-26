@@ -12,7 +12,7 @@ kelime_sebze = ("pırasa", "domates", "ıspanak", "kabak", "havuç", "patates", 
 kelime_cicek = ("menekşe", "papatya", "karanfil", "zambak", "sümbül", "leylak", "begonvil", "begonya", "orkide")
 
 while True:
-    print("Hangi kelimeyi tahmin etmek istiyorsunuz: Hayvan(1),Meyve2), Sebze(3), Çiçek(4)")
+    print("Hangi kelimeyi tahmin etmek istiyorsunuz: Hayvan(1),Meyve(2), Sebze(3), Çiçek(4)")
     secim = input("Bir seçim giriniz (1 - 2 - 3 - 4 ):  ")
     if secim == "1":
         print("* * * Şimdi Hayvan tahmin et * * *")
