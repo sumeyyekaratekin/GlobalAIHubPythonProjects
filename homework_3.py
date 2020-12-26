@@ -1,4 +1,4 @@
-#Global AI Hub Python Course Homework - 1
+#Global AI Hub Python Course Homework - 3
 #Sümeyye Karatekin
 
 import random
